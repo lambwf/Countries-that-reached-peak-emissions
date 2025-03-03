@@ -183,7 +183,7 @@ body {
 <div class="banner">
 <div class="title">Countries that have reached peak GHG emissions</div>
 <div class="link"><a href="https://lambwf.github.io/">William F. Lamb</a> | 
-<a href="https://github.com/lambwf/Countries-that-reached-peak-ghg-emissions/" target="_blank">Source Code</a>
+<a href="https://github.com/lambwf/Countries-that-reached-peak-emissions/" target="_blank">Source Code</a>
 </div>
 </div>
 <div class='grid'>
@@ -194,9 +194,9 @@ body {
 <div class='headline-figure'>
 <img src="results/map.png">
 <!-- <div class='figure-text'> -->
-<!-- <a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-ghg-emissions/main/results/map.png'>png</a> |  -->
-<!-- <a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-ghg-emissions/main/results/map.pdf'>pdf</a> |  -->
-<!-- <a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-ghg-emissions/main/results/map.svg'>svg</a> -->
+<!-- <a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/map.png'>png</a> |  -->
+<!-- <a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/map.pdf'>pdf</a> |  -->
+<!-- <a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/map.svg'>svg</a> -->
 <!-- </div> -->
 </div>
 
@@ -236,14 +236,14 @@ for (file in filenames) {
   country <- sub(".*/(.*)\\.svg", "\\1", file)
   
   link_data <- ifelse(grepl("trend",country),
-                      "<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/Countries-peak-emissions-totals.xlsx'>data</a>",
-                      "<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/Countries-peak-emissions-trend.xlsx'>data</a>")
+                      "<a target='_blank' href='https://github.com/lambwf/Countries-that-reached-peak-emissions/raw/refs/heads/main/results/Countries-peak-emissions-totals.xlsx'>data</a>",
+                      "<a target='_blank' href='https://github.com/lambwf/Countries-that-reached-peak-emissions/raw/refs/heads/main/results/Countries-peak-emissions-change.xlsx'>data</a>")
   
-  link_png <- paste0("<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-ghg-emissions/main/results/countries/", country, ".png'>png</a>")
+  link_png <- paste0("<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/countries/", country, ".png'>png</a>")
   
-  link_pdf <- paste0("<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-ghg-emissions/main/results/countries/", country, ".pdf'>pdf</a>")
+  link_pdf <- paste0("<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/countries/", country, ".pdf'>pdf</a>")
   
-  link_svg <- paste0("<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-ghg-emissions/main/results/countries/", country, ".svg'>svg</a>")
+  link_svg <- paste0("<a target='_blank' href='https://raw.githubusercontent.com/lambwf/Countries-that-reached-peak-emissions/main/results/countries/", country, ".svg'>svg</a>")
   
   cat("<div class='figure-container'>")
   cat(paste0("<img src='", file, "' alt='", country, "' />"))
