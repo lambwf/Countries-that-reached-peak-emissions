@@ -130,18 +130,8 @@ data_totals <- data_totals %>%
 inclusions <- data_totals %>% 
   filter(!is.na(rate)) %>% 
   group_by(country,iso,var) %>% 
-  summarise(rate=last(rate))
-
-inclusions <- inclusions %>%
-  mutate(include=ifelse(rate<0,1,NA)) %>% 
-  group_by(country,iso) %>% 
-  mutate(include=sum(include)) %>% 
-  ungroup() %>% 
-  mutate(include=ifelse(!is.na(include),"yes","no"))
-
-inclusions <- inclusions %>%
-  select(country,iso,include) %>% 
-  distinct()
+  summarise(rate=last(rate)) %>%
+  mutate(include=ifelse(rate<0,1,0))
 
 
 ## check if countries with earlier peak years also reduced in the past 10 years
@@ -172,26 +162,19 @@ for (i in 1:length(unique(data_totals$country))) {
 rates <- rates %>% 
   select(country,iso,var,rate) %>% 
   distinct() %>% 
-  mutate(include=ifelse(rate<0,1,NA)) %>% 
-  group_by(country,iso) %>% 
-  mutate(include=sum(include)) %>% 
-  ungroup()
- 
-rates <- rates %>% 
-  mutate(include=ifelse(!is.na(include),"yes","no")) %>% 
-  select(iso,include_past10=include) %>% 
-  distinct()
+  mutate(include=ifelse(rate<0,1,0)) %>% 
+  mutate(var=paste0(var,"_10yr"))
 
 inclusions <- inclusions %>% 
-  left_join(.,rates,by=join_by(iso))
+  rbind(.,rates)
  
 inclusions <- inclusions %>% 
-  mutate(include=ifelse(include=="yes" & include_past10=="yes","yes","no"))
+  mutate(strict_include=ifelse(include=="yes" & include_past10=="yes","yes","no"))
 
 
 length(inclusions$country[inclusions$include=="yes"])
  
-write.xlsx(inclusions,"inclusions.xlsx")
+#write.xlsx(inclusions,"inclusions.xlsx")
 
 
 ```

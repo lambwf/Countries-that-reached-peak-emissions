@@ -3,7 +3,7 @@
     "path": "C:/Users/lamw/Nextcloud/Projects/Countries-that-reached-peak-emissions/Countries-that-reached-peak-emissions.Rmd",
     "project_path": "Countries-that-reached-peak-emissions.Rmd",
     "type": "r_markdown",
-    "hash": "2052257833",
+    "hash": "620692841",
     "contents": "",
     "dirty": false,
     "created": 1741004225811.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "289,1",
-        "scrollLine": "286",
+        "cursorPosition": "176,1",
+        "scrollLine": "158",
         "last_setup_crc32": ""
     },
     "folds": "",
-    "lastKnownWriteTime": 1741005696,
+    "lastKnownWriteTime": 1741188020,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1741006223969,
+    "last_content_update": 1741188020962,
     "read_only": false,
     "read_only_alternatives": []
 }
