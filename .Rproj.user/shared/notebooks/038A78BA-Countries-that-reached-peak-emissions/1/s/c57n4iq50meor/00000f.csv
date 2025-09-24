@@ -23,10 +23,7 @@
 "0","  mutate(value_co2cons=value_co2cons*(44/12)) %>% "
 "0","  mutate(iso=countrycode(country,""country.name"",""iso3c"")) %>% "
 "0","  select(-country)"
-"2","Warnung: [38;5;232mThere was 1 warning in `mutate()`.[39m
-[38;5;232m[36mℹ[38;5;232m In argument: `iso = countrycode(country, ""country.name"", ""iso3c"")`.[39m
-Caused by warning:
-[33m![39m Some values were not matched unambiguously: Africa, Asia, Bunkers, Central.America, EU27, Europe, Kosovo, KP.Annex.B, Middle.East, Non-OECD, Non.KP.Annex.B, North.America, Oceania, OECD, South.America, Statistical.Difference, World"
+"0",""
 "0","data_totals <- data_totals %>% "
 "0","  left_join(.,data_cons,by = join_by(iso, year))"
 "0",""
@@ -37,7 +34,7 @@ Caused by warning:
 "0","  mutate(include=ifelse(year>=2000,1,0)) %>% "
 "0","  group_by(country,iso) %>% "
 "0","  mutate(include=sum(include)) %>% "
-"0","  filter(include>max(data_totals$year)-2000) %>% "
+"0","  filter(include>=max(data_totals$year)-2000) %>% "
 "0","  select(-include) %>% "
 "0","  ungroup() %>% "
 "0","  gather(.,var,value,value_inLUC,value_exLUC,value_co2cons)"
@@ -57,9 +54,7 @@ Caused by warning:
 "0","  filter(year<=max(data_totals$year)-10) %>% "
 "0","  group_by(country,iso,var) %>% "
 "0","  summarise(peak_year=year[which.max(value)])"
-"2","Warnung: Returning more (or less) than 1 row per `summarise()` group was deprecated in dplyr 1.1.0.
-Please use `reframe()` instead.
-When switching from `summarise()` to `reframe()`, remember that `reframe()` always returns an ungrouped data frame and adjust accordingly."
+"0",""
 "0","data_totals <- left_join(data_totals,peak_years,by=join_by(country,iso,var))"
 "0",""
 "0",""
