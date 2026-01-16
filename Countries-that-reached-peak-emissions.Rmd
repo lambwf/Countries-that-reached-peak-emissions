@@ -260,7 +260,7 @@ for (i in 1:length(countries)) {
     theme(axis.title = element_blank(),legend.position = "none") +
     labs(title=paste0(countries[i]),
          subtitle=expression("MtCO"[2]*"e/yr"),
-         caption="⌂ Data: UNFCCC, Tidy GHG inventories, GCB 2024   ⌂ CC-BY William F. Lamb  \n⌂ Note: GWP100 AR6; net land use change (LULUCF) emissions based on inventories")
+         caption="⌂ Data: UNFCCC, Tidy GHG inventories, GCB 2024   ⌂ CC-BY William F. Lamb  \n⌂ Note: GWP100 AR5; net land use change (LULUCF) emissions based on inventories")
   
   
   p2 <- plot_labels %>% 
@@ -309,7 +309,7 @@ writeData(wb, sheet = "info",info,colNames = F, rowNames = F)
 writeData(wb, sheet = "data",data_totals %>%
             select(country,iso,var,year,value,peak_year,rate,fit) %>% 
             arrange(country,iso,var,year) %>% 
-            mutate(units="MtCO2e (GWP100 AR6)"),colNames = T, rowNames = F)
+            mutate(units="MtCO2e (GWP100 AR5)"),colNames = T, rowNames = F)
 
 saveWorkbook(wb,paste0("results/Countries-peak-emissions-totals.xlsx"),overwrite=T)
 
@@ -429,7 +429,7 @@ plot_country_change <- function(countries,data_sectors) {
           axis.ticks.y = element_blank()) +
     labs(title=countries,
          subtitle=bquote(paste("Change in total GHG emissions incl. land use change since peak (MtCO"[2], "e)")),
-         caption="⌂ Data: UNFCCC, Tidy GHG Inventories   ⌂ CC-BY William F. Lamb  \n⌂ Note: GWP100 AR6; net land use change (LULUCF) emissions based on inventories") +
+         caption="⌂ Data: UNFCCC, Tidy GHG Inventories   ⌂ CC-BY William F. Lamb  \n⌂ Note: GWP100 AR5; net land use change (LULUCF) emissions based on inventories") +
     coord_cartesian(clip = "off")
   
   
@@ -510,7 +510,7 @@ writeData(wb, sheet = "info",info,colNames = F, rowNames = F)
 writeData(wb, sheet = "data",data_sectors %>% 
             arrange(country,iso,sector_tidy_order,year) %>% 
             select(country,iso,sector_tidy,year,value,change_abs,change_rel) %>% 
-            mutate(units="MtCO2e (GWP100 AR6)"),colNames = T, rowNames = F)
+            mutate(units="MtCO2e (GWP100 AR5)"),colNames = T, rowNames = F)
 
 saveWorkbook(wb,paste0("results/Countries-peak-emissions-change.xlsx"),overwrite=T)
 

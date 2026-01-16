@@ -105,7 +105,7 @@
 <text x='71.91' y='40.12' style='font-size: 12.00px;fill: #636363; font-family: "Arial";' textLength='20.01px' lengthAdjust='spacingAndGlyphs'>e/yr</text>
 <text x='35.91' y='25.05' style='font-size: 14.00px; font-weight: bold;fill: #636363; font-family: "Arial";' textLength='65.31px' lengthAdjust='spacingAndGlyphs'>Indonesia</text>
 <text x='35.91' y='266.38' style='font-size: 9.00px;fill: #BDBDBD; font-family: "Arial";' textLength='321.75px' lengthAdjust='spacingAndGlyphs'>⌂ Data: UNFCCC, Tidy GHG inventories, GCB 2024   ⌂ CC-BY William F. Lamb  </text>
-<text x='35.91' y='276.10' style='font-size: 9.00px;fill: #BDBDBD; font-family: "Arial";' textLength='345.55px' lengthAdjust='spacingAndGlyphs'>⌂ Note: GWP100 AR6; net land use change (LULUCF) emissions based on inventories</text>
+<text x='35.91' y='276.10' style='font-size: 9.00px;fill: #BDBDBD; font-family: "Arial";' textLength='345.55px' lengthAdjust='spacingAndGlyphs'>⌂ Note: GWP100 AR5; net land use change (LULUCF) emissions based on inventories</text>
 </g>
 <defs>
   <clipPath id='cpMzQyLjA5fDQ5OC41Mnw1MC42N3wyMzIuOTg='>
@@ -113,13 +113,13 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpMzQyLjA5fDQ5OC41Mnw1MC42N3wyMzIuOTg=)'>
-<text x='345.32' y='151.73' style='font-size: 10.67px;fill: #659CCC; font-family: "Arial";' textLength='148.05px' lengthAdjust='spacingAndGlyphs'>Total GHG emissions excl. land</text>
-<text x='345.32' y='167.09' style='font-size: 10.67px;fill: #659CCC; font-family: "Arial";' textLength='142.75px' lengthAdjust='spacingAndGlyphs'>use change: 3%/yr since 2012</text>
-<text x='347.02' y='103.42' style='font-size: 10.67px;fill: #7DD396; font-family: "Arial";' textLength='145.09px' lengthAdjust='spacingAndGlyphs'>Total GHG emissions incl. land</text>
-<text x='347.02' y='118.79' style='font-size: 10.67px;fill: #7DD396; font-family: "Arial";' textLength='128.52px' lengthAdjust='spacingAndGlyphs'>use change: -0.2%/yr since</text>
-<text x='347.02' y='134.15' style='font-size: 10.67px;fill: #7DD396; font-family: "Arial";' textLength='23.70px' lengthAdjust='spacingAndGlyphs'>2006</text>
-<text x='347.02' y='184.78' style='font-size: 10.67px;fill: #D45087; font-family: "Arial";' textLength='120.23px' lengthAdjust='spacingAndGlyphs'>Consumption-based CO2</text>
-<text x='347.02' y='200.14' style='font-size: 10.67px;fill: #D45087; font-family: "Arial";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>emissions: 2.6%/yr since 2012</text>
+<text x='347.02' y='151.52' style='font-size: 10.67px;fill: #659CCC; font-family: "Arial";' textLength='148.05px' lengthAdjust='spacingAndGlyphs'>Total GHG emissions excl. land</text>
+<text x='347.02' y='166.88' style='font-size: 10.67px;fill: #659CCC; font-family: "Arial";' textLength='142.75px' lengthAdjust='spacingAndGlyphs'>use change: 3%/yr since 2012</text>
+<text x='347.02' y='103.22' style='font-size: 10.67px;fill: #7DD396; font-family: "Arial";' textLength='145.09px' lengthAdjust='spacingAndGlyphs'>Total GHG emissions incl. land</text>
+<text x='347.02' y='118.59' style='font-size: 10.67px;fill: #7DD396; font-family: "Arial";' textLength='128.52px' lengthAdjust='spacingAndGlyphs'>use change: -0.2%/yr since</text>
+<text x='347.02' y='133.95' style='font-size: 10.67px;fill: #7DD396; font-family: "Arial";' textLength='23.70px' lengthAdjust='spacingAndGlyphs'>2006</text>
+<text x='347.02' y='184.57' style='font-size: 10.67px;fill: #D45087; font-family: "Arial";' textLength='120.23px' lengthAdjust='spacingAndGlyphs'>Consumption-based CO2</text>
+<text x='347.02' y='199.94' style='font-size: 10.67px;fill: #D45087; font-family: "Arial";' textLength='143.91px' lengthAdjust='spacingAndGlyphs'>emissions: 2.6%/yr since 2012</text>
 </g>
 <g clip-path='url(#cpMC4wMHw1MDQuMDB8MC4wMHwyODguMDA=)'>
 </g>
