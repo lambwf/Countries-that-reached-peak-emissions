@@ -1,0 +1,8 @@
+"0",""
+"0",""
+"0","ggsave(paste0(""results/map.png""), plot = p, device = ""png"", dpi = 300, width = 7, height = 4)"
+"0","ggsave(paste0(""results/map.pdf""), plot = p, device = cairo_pdf, width = 7, height = 4)"
+"0","ggsave(paste0(""results/map.svg""), plot = p, device = ""svg"", width = 7, height = 4)"
+"0",""
+"0",""
+"0",""

@@ -177,7 +177,8 @@ inclusions <- inclusions %>%
 
 ## Make a less strict criteria with exceptions for countries with declining land sinks in the past 10 years
 inclusions <- inclusions %>%
-  left_join(.,inclusions %>% filter(strict_include>=5 & var=="value_inLUC_10yr" & include==0) %>% 
+  left_join(.,inclusions %>% filter(strict_include>=5 & var=="value_inLUC_10yr" & include==0 | 
+                                      strict_include>=5 & var=="value_co2cons_10yr" & include==0) %>% 
               mutate(less_strict_include="yes") %>% 
               select(iso,less_strict_include))
 
